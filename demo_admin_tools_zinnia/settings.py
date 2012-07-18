@@ -97,3 +97,5 @@ INSTALLED_APPS = (
     'zinnia',
     'tagging',
     )
+
+ADMIN_TOOLS_MENU = 'demo_admin_tools_zinnia.menu.CustomMenu'
