@@ -1,0 +1,8 @@
+include README.rst
+include LICENSE.txt
+include buildout.cfg
+include bootstrap.py
+recursive-include demo_admin_tools_zinnia *
+recursive-include admin_tools_zinnia/locale *
+recursive-include admin_tools_zinnia/templates *.txt *.html *.xml *.js
+exclude demo_admin_tools_zinnia/demo.db
