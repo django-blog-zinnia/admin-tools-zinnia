@@ -84,6 +84,7 @@ INSTALLED_APPS = (
     'admin_tools.theming',
     'admin_tools.menu',
     'admin_tools.dashboard',
+    'admin_tools_zinnia',
     'django.contrib.auth',
     'django.contrib.sitemaps',
     'django.contrib.comments',

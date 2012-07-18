@@ -11,11 +11,12 @@ And to activate the app index dashboard::
 """
 
 from django.utils.translation import ugettext_lazy as _
-from django.core.urlresolvers import reverse
 
-from admin_tools.dashboard import modules, Dashboard, AppIndexDashboard
-from admin_tools.utils import get_admin_site_name
+from admin_tools.dashboard import modules
+from admin_tools.dashboard import Dashboard
+from admin_tools.dashboard import AppIndexDashboard
 
+from admin_tools_zinnia.modules.statistics import ZinniaStatistics
 
 apps_group = modules.Group(
     title=_('Applications'),
@@ -41,6 +42,7 @@ class CustomIndexDashboard(Dashboard):
 
     def init_with_context(self, context):
         self.children.append(apps_group)
+        self.children.append(ZinniaStatistics())
         self.children.append(modules.RecentActions(_('Recent Actions'), 5))
         self.children.append(modules.LinkList(
             _('Zinnia support'),
