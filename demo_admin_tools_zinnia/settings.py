@@ -99,3 +99,5 @@ INSTALLED_APPS = (
     )
 
 ADMIN_TOOLS_MENU = 'demo_admin_tools_zinnia.menu.CustomMenu'
+ADMIN_TOOLS_INDEX_DASHBOARD = 'demo_admin_tools_zinnia.dashboard.CustomIndexDashboard'
+ADMIN_TOOLS_APP_INDEX_DASHBOARD = 'demo_admin_tools_zinnia.dashboard.CustomAppIndexDashboard'

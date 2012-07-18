@@ -23,8 +23,7 @@ class CustomMenu(Menu):
             items.Bookmarks(),
             items.AppList(
                 _('Weblog'),
-                models=('zinnia.*',
-                        'tagging.*',
+                models=('zinnia.*', 'tagging.*',
                         'django.contrib.comments.*')
             ),
             items.AppList(
