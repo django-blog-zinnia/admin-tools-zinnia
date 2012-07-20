@@ -16,6 +16,7 @@ from admin_tools.dashboard import modules
 from admin_tools.dashboard import Dashboard
 from admin_tools.dashboard import AppIndexDashboard
 
+from admin_tools_zinnia.modules.linkbacks import Linkbacks
 from admin_tools_zinnia.modules.statistics import ZinniaStatistics
 
 apps_group = modules.Group(
@@ -43,6 +44,7 @@ class CustomIndexDashboard(Dashboard):
     def init_with_context(self, context):
         self.children.append(apps_group)
         self.children.append(ZinniaStatistics())
+        self.children.append(Linkbacks())
         self.children.append(modules.RecentActions(_('Recent Actions'), 5))
         self.children.append(modules.LinkList(
             _('Zinnia support'),
