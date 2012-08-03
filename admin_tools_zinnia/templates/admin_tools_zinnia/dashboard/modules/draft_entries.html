@@ -1,0 +1,7 @@
+{% extends "admin_tools/dashboard/module.html" %}
+{% load zinnia_tags %}
+{% block module_content %}
+<table>
+    {% get_draft_entries template="admin/zinnia/widgets/_draft_entries.html" %}
+</table>
+{% endblock %}

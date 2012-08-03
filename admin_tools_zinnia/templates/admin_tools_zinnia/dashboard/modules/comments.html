@@ -1,0 +1,7 @@
+{% extends "admin_tools/dashboard/module.html" %}
+{% load zinnia_tags %}
+{% block module_content %}
+<table>
+    {% get_recent_comments template="admin/zinnia/widgets/_recent_comments.html" %}
+</table>
+{% endblock %}
