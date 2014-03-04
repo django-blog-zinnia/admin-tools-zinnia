@@ -38,6 +38,7 @@ apps_group = modules.Group(
             )]
     )
 
+
 class CustomIndexDashboard(Dashboard):
     """
     Custom index dashboard for demo_admin_tools_zinnia.
@@ -70,7 +71,7 @@ class CustomIndexDashboard(Dashboard):
             ))
         self.children.append(modules.Feed(
             _('Recent commits on Zinnia'),
-            feed_url='https://github.com/Fantomas42/django-blog-zinnia/commits/master.atom',
+            feed_url='https://github.com/Fantomas42/django-blog-zinnia/commits/develop.atom',
             limit=5))
 
 
