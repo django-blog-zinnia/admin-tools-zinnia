@@ -5,7 +5,7 @@ from setuptools import find_packages
 import admin_tools_zinnia
 
 setup(
-    name='admin_tools_zinnia',
+    name='admin-tools-zinnia',
     version=admin_tools_zinnia.__version__,
 
     description='Admin tools for django-blog-zinnia',
