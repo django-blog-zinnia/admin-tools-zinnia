@@ -27,6 +27,14 @@ Installation
       ...
     )
     
+* Add ``admin_tools.urls`` before ``admin.site.urls`` to yours url file: ::
+
+    urlpatterns = [
+      ...
+      url(r'^admin/tools/', include('admin_tools.urls')),
+      url(r'^admin/', include(admin.site.urls)),
+    ]
+
 * Launch database migration: ::
 
   $ ./manage.py migrate
