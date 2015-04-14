@@ -5,9 +5,6 @@ Admin-tools Zinnia
 Admin-tools-zinnia is package providing new dashboard modules related to
 your `Zinnia`_ application for `django-admin-tools`_.
 
-.. _Zinnia: http://django-blog-zinnia.com/
-.. _django-admin-tools: http://pypi.python.org/pypi/django-admin-tools/
-
 Installation
 ============
 
@@ -26,7 +23,7 @@ Installation
       'admin_tools_zinnia',
       ...
     )
-    
+
 * Add ``admin_tools.urls`` before ``admin.site.urls`` to yours url file: ::
 
     urlpatterns = [
@@ -42,4 +39,5 @@ Installation
 
 You are done !
 
-
+.. _Zinnia: http://django-blog-zinnia.com/
+.. _django-admin-tools: http://pypi.python.org/pypi/django-admin-tools/
